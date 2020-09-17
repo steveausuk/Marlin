@@ -1109,8 +1109,10 @@
 
 // Add an 'M73' G-code to set the current percentage
 #if ENABLED (PROGRESSINFO)
-#if HAS_CHARACTER_LCD || HAS_GRAPHICAL_LCD
-#define LCD_SET_PROGRESS_MANUALLY
+  #if HAS_CHARACTER_LCD || HAS_GRAPHICAL_LCD
+    #define LCD_SET_PROGRESS_MANUALLY
+  #endif
+#endif
 
 // Show the E position (filament used) during printing
 #define LCD_SHOW_E_TOTAL
@@ -1126,6 +1128,10 @@
     //#define ROTATE_PROGRESS_DISPLAY // Display (P)rogress, (E)lapsed, and (R)emaining time
   #endif
 
+#if HAS_GRAPHICAL_LCD
+    //#define PRINT_PROGRESS_SHOW_DECIMALS // Show progress with decimal digits
+#endif
+
 #if HAS_CHARACTER_LCD && EITHER(SDSUPPORT, LCD_SET_PROGRESS_MANUALLY)
   #define LCD_PROGRESS_BAR              // Show a progress bar on HD44780 LCDs for SD printing
   #if ENABLED(LCD_PROGRESS_BAR)
@@ -1134,9 +1140,6 @@
     #define PROGRESS_MSG_EXPIRE   0       // (ms) Amount of time to retain the status message (0=forever)
     //#define PROGRESS_MSG_ONCE           // Show the message for MSG_TIME then clear it
     //#define LCD_PROGRESS_BAR_TEST       // Add a menu item to test the progress bar
-  #if HAS_GRAPHICAL_LCD
-    //#define PRINT_PROGRESS_SHOW_DECIMALS // Show progress with decimal digits
-  #endif
 
   #if HAS_CHARACTER_LCD
     //#define LCD_PROGRESS_BAR            // Show a progress bar on HD44780 LCDs for SD printing
