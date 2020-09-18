@@ -28,7 +28,7 @@ Configuration repo: https://github.com/MarlinFirmware/Configurations/pulls?q=aut
 
 ## Building Marlin 2.0
 
-To build Marlin 2.0 you'll need [PlatformIO](https://docs.platformio.org/en/latest/ide.html#platformio-ide). We've posted detailed instructions on [Building Marlin with PlatformIO for ReArm](https://marlinfw.org/docs/basics/install_rearm.html) (which applies well to other 32-bit boards).
+To build Marlin 2.0 you'll need [PlatformIO](https://docs.platformio.org/en/latest/ide.html#platformio-ide). I have posted video instructions on [Building Marlin with PlatformIO](https://www.youtube.com/watch?v=y0j1AyTKDyg).
 
 ## Credits
 
