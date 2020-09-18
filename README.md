@@ -6,6 +6,21 @@ This being said nearly all the 100k+ lines of code i added have been merged upst
 
 At this time there is nearly no differance between my fork and upstearm other then my custom configuration files (configuration.h, configuration_adv.h, start_here.h).
 
+# Supported Models
+
+A10 and its variants
+
+A20 and its variants
+
+A30 and its variants
+
+I3PRO and its variants
+
+E180
+D200
+M201
+Ender3
+
 # Code Contributed
 Upstream marlin 2 repo: https://github.com/MarlinFirmware/Marlin/pulls?q=author%3AVertabreak+
 
