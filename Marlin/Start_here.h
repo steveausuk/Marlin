@@ -235,7 +235,6 @@
 //#define EXTRUSIONSCALING // Enabled PID EXTRUSION SCALING
 //#define ACTIONCOMMANDS   // Enable ACTION COMMANDS for use with octoprint
 //#define MESHVALIDATE     // Enable G26 mesh validation does not work well in my testing
-//#define PROGRESSINFO     // Enable print progress info display
 
 //Disable to save resources on hardware you dont use
 //#define NOSCREEN         // Disable the screen - Save alot of resources good for octoprint users
