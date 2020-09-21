@@ -796,7 +796,6 @@
 #endif
 
 #if ENABLED(ASSISTED_TRAMMING)
-
   // Define positions for probing points, use the hotend as reference not the sensor.
   #define TRAMMING_POINT_XY { { 40, 40 }, { X_BED_SIZE-40, 40 }, { X_BED_SIZE-40, Y_BED_SIZE-40 }, { 40, Y_BED_SIZE-40 } }
 
@@ -808,6 +807,9 @@
 
   // Enable to restore leveling setup after operation
   #define RESTORE_LEVELING_AFTER_G35
+
+  // Add a menu item for Assisted Tramming
+  //#define ASSISTED_TRAMMING_MENU_ITEM
 
   /**
    * Screw thread:
