@@ -2018,7 +2018,7 @@
  * Universal tool change settings.
  * Applies to all types of extruders except where explicitly noted.
  */
-#if EXTRUDERS > 1
+#if HAS_MULTI_EXTRUDER
   // Z raise distance for tool-change, as needed for some extruders
   #define TOOLCHANGE_ZRAISE     0  // (mm)
   //#define TOOLCHANGE_NO_RETURN   // Never return to the previous position on tool-change
@@ -2076,7 +2076,7 @@
     #define TOOLCHANGE_PARK_XY    { X_MIN_POS + 0, Y_MIN_POS + 0 }
     #define TOOLCHANGE_PARK_XY_FEEDRATE HOMING_FEEDRATE_XY  // (mm/m)
   #endif
-#endif
+#endif // HAS_MULTI_EXTRUDER
 
 /**
  * Advanced Pause
