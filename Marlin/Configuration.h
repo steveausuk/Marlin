@@ -144,7 +144,7 @@
 //#define BLUETOOTH
 
 // Choose the name from boards.h that matches your setup
-#ifndef MOTHERBOAR
+#ifndef MOTHERBOARD
 #if ENABLED (CUSTOMBOARD)
 //use custom defined board 
 #elif ENABLED (GTA10)
